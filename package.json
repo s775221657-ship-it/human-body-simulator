@@ -1,0 +1,21 @@
+{
+  "name": "anatomy-atlas-3d",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "npm run validate:assets && vite build && npm run validate:dist",
+    "preview": "vite preview",
+    "test": "vitest run",
+    "validate:assets": "node scripts/validate-assets.mjs",
+    "validate:dist": "node scripts/validate-dist.mjs"
+  },
+  "dependencies": {
+    "three": "^0.179.1"
+  },
+  "devDependencies": {
+    "vite": "^7.0.5",
+    "vitest": "^3.2.4"
+  }
+}
